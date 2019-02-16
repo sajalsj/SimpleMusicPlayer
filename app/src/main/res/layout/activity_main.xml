@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aas"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/superthumb"
+        android:id="@+id/cvv"
+        app:civ_border_width="5dp"
+        app:civ_border_color="#660101"/>
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round"
+        android:text="Play"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toLeftOf="@+id/play"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="25dp"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/round"
+        android:text="Pause" />
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/play"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/round"
+        android:text="stop" />
+
+
+
+</RelativeLayout>
